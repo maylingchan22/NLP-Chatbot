@@ -35,7 +35,7 @@
           "See you later, thanks for visiting",
           "Have a nice day",
           "Bye! Come back again soon.",
-          "Bye! Catch up with you later.",
+          "Bye! Catch up with you later."
         ]
       },
       {
@@ -53,7 +53,7 @@
         "Any time!", 
         "You're welcome!",
         "My pleasure",
-        "No problem.",
+        "No problem."
       ]
       },
       {
@@ -80,7 +80,7 @@
         ],
         "responses": [
           "We accept VISA, Mastercard and Paypal",
-          "We accept most major credit cards, and Paypal",
+          "We accept most major credit cards, and Paypal"
         ]
       },
       {
@@ -123,7 +123,7 @@
           "Why couldn't the pony sing a lullaby? She was a little horse.",
           "What does a storm cloud wear under his raincoat? Thunderwear."
         ]
-      }
+      },
       {
         "tag": "inspirational",
         "patterns": [
