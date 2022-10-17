@@ -1,0 +1,145 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "What's up?",
+          "Good Morning",
+          "Salute",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey :)",
+          "Hello, thanks for visiting",
+          "Hello, look what the cat dragged in!",
+          "Hiya, long time no see.",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+        "Bye", 
+        "See you later", 
+        "Talk to you later", 
+        "Peace out.",
+        "Goodbye"
+      ],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon.",
+          "Bye! Catch up with you later.",
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+        "Thanks", 
+        "Thank you",
+        "Thank you and have a great day!",
+        "That's helpful", 
+        "Thank's a lot!",
+        "Thank you very much!"
+        ],
+        "responses": [
+        "Happy to help!", 
+        "Any time!", 
+        "You're welcome!",
+        "My pleasure",
+        "No problem.",
+      ]
+      },
+      {
+        "tag": "store_items",
+        "patterns": [
+          "Which items do you have?",
+          "What kinds of items are there?",
+          "What do you sell?"
+        ],
+        "responses": [
+          "We sell coffee, tea, and biscuits.",
+          "We have coffee, tea, and biscuits.",
+          "Sorry, we are all sold out for today."
+        ]
+      },
+      {
+        "tag": "payments",
+        "patterns": [
+          "Do you take credit cards?",
+          "Do you take checks?",
+          "Do you accept Mastercard?",
+          "Can I pay with Paypal?",
+          "Are you cash only?"
+        ],
+        "responses": [
+          "We accept VISA, Mastercard and Paypal",
+          "We accept most major credit cards, and Paypal",
+        ]
+      },
+      {
+        "tag": "delivery",
+        "patterns": [
+          "How long does delivery take?",
+          "How long does shipping take?",
+          "When do I get my delivery?"
+        ],
+        "responses": [
+          "Delivery takes 2-5 days",
+          "Shipping takes 2-5 days"
+        ]
+      },
+      {
+        "tag": "refunds",
+        "patterns": [
+          "I have a problem with my purchase.",
+          "My delivery arrived damaged.",
+          "I would like to request a refund.",
+          "I want to speak with a customer representative."
+        ],
+        "responses": [
+          "Hi, I'm so sorry that this happened. Can you confirm your purchase number with me?",
+          "Hi, I'm so sorry that this happened. Can you confirm your confirmation number for me?"
+        ]
+      },
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Make me laugh!",
+          "Tell me something funny!",
+          "Do you know a joke?"
+        ],
+        "responses": [
+          "Why do we tell actors to 'break a leg? Because every play has a cast.",
+          "What kind of tea is hard to swallow? Reality.",
+          "Why did an old man fall in a well? Because he couldn't see that well!",
+          "Why couldn't the pony sing a lullaby? She was a little horse.",
+          "What does a storm cloud wear under his raincoat? Thunderwear."
+        ]
+      }
+      {
+        "tag": "inspirational",
+        "patterns": [
+          "Give me some encouragement!",
+          "Read me a inspirational quote.",
+          "I'm nervous. I need some encouragement.",
+          "I need some cheering up.",
+          "Do you know any inspirational quotes?"
+        ],
+        "responses": [
+          "Out of the mountain of despair, a stone of hope.",
+          "There is always light. If only we're brave enough to see it. If only we're brave enough to be it.",
+          "Success is not final; Failure is not fatal. It is the courage to continue that counts.",
+          "If you want to lift yourself up, lift up someone else.",
+          "Act as if what you do makes a difference. IT DOES."
+        ]
+      }
+    ]
+  }
