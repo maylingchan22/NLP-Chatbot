@@ -14,7 +14,7 @@ To run the app locally, install Flask in your server via the command:
 Run the Flask server via the command:
 > python -m flask run
 
-If the app is running via Flask, comment out this line of code in the chat.py file for better transition.
+If the app is running via Flask, comment out this line of code in the ```chat.py``` file for better transition.
 
 ```
 bot = ChatBot()
