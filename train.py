@@ -32,7 +32,7 @@ for (pattern_sentence, tag) in xy:
     bag = bag_of_words(pattern_sentence, all_words)
     x_train.append(bag)
 
-    label = tag.index(tag)
+    label = tags.index(tag)
     y_train.append(label)
 
 x_train = np.array(x_train)
@@ -68,7 +68,7 @@ optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 for epoch in range(num_epochs):
     for (words, labels) in train_loader:
         words = words.to(device)
-        labels = labels.to(device)
+        labels = labels.to(dtype=torch.long).to(device)
 
         outputs = model(words)
         loss = criterion(outputs, labels)
@@ -78,9 +78,21 @@ for epoch in range(num_epochs):
         optimizer.step()
 
     if (epoch + 1) % 100 == 0:
-        print(f'epoch {epoch+1}/{num_epochs}, loss={loss.item():.4f}')
+        print(f'Epoch [{epoch+1}/{num_epochs}], loss={loss.item():.4f}')
 
 print(f'final loss, loss={loss.item():.4f}')
 
+data = {
+    "model_state": model.state_dict(),
+    "input_size": input_size,
+    "output_size": output_size,
+    "hidden_size": hidden_size,
+    "all_words": all_words,
+    "tags": tags
+}
 
+FILE = "data.pth"
+torch.save(data, FILE)
+
+print(f"Training complete. File saved to {FILE}")
 

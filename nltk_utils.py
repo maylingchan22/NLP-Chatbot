@@ -10,15 +10,10 @@ def tokenize(sentence):
 def stem(word):
     return stemmer.stem(word.lower())
 
-def bag_of_words(tokenized_sentence, all_words):
-    tokenized_sentence = [stem(w) for w in tokenized_sentence]
-    bag = np.zeros(len(all_words), dtype =np.float32)
-    for i, w in enumerate(all_words):
-        if w in tokenized_sentence:
+def bag_of_words(tokenized_sentence, words):
+    sentence = [stem(w) for w in tokenized_sentence]
+    bag = np.zeros(len(words), dtype =np.float32)
+    for i, x in enumerate(words):
+        if x in sentence:
             bag[i] = 1
     return bag
-
-sentence = ["hello", "how", "are", "you"]
-words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
-bag = bag_of_words(sentence, words)
-print(bag)
