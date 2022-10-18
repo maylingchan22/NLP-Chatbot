@@ -51,3 +51,12 @@ class ChatBot():
             else:
                 return (f"Sorry, can't understand you, Please give me more info")
 
+
+bot = ChatBot()
+while True:
+    your_response = input("You: ")
+    if your_response == "stop":
+        break
+    print(bot.response(your_response))
+    
+
